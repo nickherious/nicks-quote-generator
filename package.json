@@ -1,0 +1,48 @@
+{
+  "name": "nicks-quote-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "A simple quote generator using Typescript",
+  "author": "Nicholas Herious",
+  "license": "MIT",
+  "bin": {
+    "nicks-quote-generator": "./bin/cli.js"
+  },
+  "keywords": ["yarn", "react", "quote", "generator"],
+  "repository": {
+    "url": "https://github.com/nickherious/nick-react-boilerplate",
+    "type": "git"
+  },
+  "scripts": {
+    "start": "webpack serve --open",
+    "build": "webpack --config webpack.config.js",
+    "dev": "yarn build && yarn start",
+    "test": "vitest run",
+    "release": "yarn test && yarn build && yarn changeset publish"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "@babel/preset-typescript": "^7.23.3",
+    "@changesets/cli": "^2.27.1",
+    "babel-loader": "8.2.3",
+    "css-loader": "^6.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.4",
+    "vitest": "^1.0.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "optionalDependencies": {
+    "optional-library": "1.0.0"
+  }
+}
